@@ -1,4 +1,13 @@
 .pinDetails {
   font-weight: bold;
 }
+.example-card {
+  max-width: 400px;
+  margin: auto;
+}
+
+.example-header-image {
+  background-image: url('https://img.icons8.com/color/48/000000/test-account.png');
+  background-size: cover;
+}
 

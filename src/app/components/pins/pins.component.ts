@@ -8,7 +8,7 @@ import { PINS } from '../../mock-pins';
   styleUrls: ['./pins.component.css']
 })
 export class PinsComponent implements OnInit {
-  pin = PINS;
+  pins = PINS;
 
 
   constructor() { }

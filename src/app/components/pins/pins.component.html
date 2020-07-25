@@ -1,8 +1,21 @@
-<h2>My Pins</h2>
-<ul class="heroes">
-  <li *ngFor="let pin of pins">
-    <span class="badge">{{pin.id}}</span> {{pin.name}}
-  </li>
-</ul>
-
-
+<mat-card *ngFor="let pin of pins" class="example-card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title></mat-card-title>
+    <mat-card-subtitle>{{pin.name}}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image src="{{pin.img}}" alt="Photo of {{pin.creator}} {{pin.name}}">
+  <mat-card-content>
+    <ul class="pinDetails">
+      <li>Character name: {{pin.name}}</li>
+      <li>Pin Creator: {{pin.creator}}</li>
+      <li>Variant: {{pin.variant}}</li>
+      <li>Series: {{pin.series}}</li>
+      <li>Year Released: {{pin.year}}</li>
+    </ul>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button>Add to Collection</button>
+    <button mat-button>Share</button>
+  </mat-card-actions>
+</mat-card>
